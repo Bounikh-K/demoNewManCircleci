@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "79e9339c-2ca7-4b1e-a3bc-0e31e2dced50",
+		"name": "Users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getUsers",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "createUsers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"khouala\",\r\n    \"email\": \"test@test.com\",\r\n    \"password\": \"$2a$10$Cwqhj4etFPi6rZHrTJma4.LNR8Ikoql.11Iqco9DrtJPnefA.gsl2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api_url}}/user/create",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"user",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
